@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.skgqmqe.mongodb.net
-      MONGODB_USERNAME: thameera-gh-tests
-      MONGODB_PASSWORD: Thameera1!
+      MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
       PORT: 8080
     steps:
       - name: Get Code
